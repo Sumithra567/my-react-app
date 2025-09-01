@@ -6,8 +6,8 @@
 // import Counter from "./componentss/counter/index.jsx"
 
 // import StudentCard from "./componentsList/propsList/indexList.jsx"
-import { Component } from "react"
-import Clock from "./componentsClock/clock"
+// import { Component } from "react"
+// import Clock from "./componentsClock/clock"
 // function App() {
  
 
@@ -134,24 +134,36 @@ import Clock from "./componentsClock/clock"
 //     )
 //   }
 // }
+// import "./App.css"
+// class App extends Component{
+//   state={
+//     isShow:true
+//   }
+//   toggleBtn=()=>{
+//     this.setState({
+//       isShow:!this.state.isShow
+//     })
+//   }
+//   render(){
+//     const{isShow}=this.state
+//     return(
+//       <div className="background">
+//         <button className="btn" onClick={this.toggleBtn}>{isShow?"Hide":"show"}</button>
+//       {isShow && <Clock/>}
+//       </div>
+//     )
+//   }
+// }
+// export default App
+
+import Faqs from "./componentsfaqs/faqs/index.jsx"
 import "./App.css"
-class App extends Component{
-  state={
-    isShow:true
-  }
-  toggleBtn=()=>{
-    this.setState({
-      isShow:!this.state.isShow
-    })
-  }
-  render(){
-    const{isShow}=this.state
-    return(
-      <div className="background">
-        <button className="btn" onClick={this.toggleBtn}>{isShow?"Hide":"show"}</button>
-      {isShow && <Clock/>}
-      </div>
-    )
-  }
+function App(){
+  return(
+    <div className="backgrounds">
+      <Faqs/>
+    </div>
+    
+  )
 }
 export default App
